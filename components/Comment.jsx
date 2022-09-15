@@ -11,17 +11,18 @@ export default function Comment(props) {
           width="48"
           height="48"
           className="rounded-circle"
-          
+          style={{ objectFit: "cover" }}
         />
         <div
-          className="rounded rounded-3 "
+          className="rounded rounded-2"
+          style={{ backgroundColor: "Grey" }}
         >
-          <span className="fw-semibold" style={{color: "White" }}>
+          <span className="fw-semibold" style={{color: "#F3F9A2  " }}>
             {props.owner}
           </span>
           <br />
-          <span style={{ color: "#White" }}>{props.content}</span>
-          <Count like ={props.like} />
+          <span style={{ color: "#F3F9A2 " }}>{props.content}</span>
+          <Count like={props.like} />
         </div>
       </div>
 
