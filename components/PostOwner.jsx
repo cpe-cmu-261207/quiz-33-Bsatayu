@@ -10,16 +10,15 @@ export default function PostOwner(props) {
         width="48"
         height="48"
         className="rounded-circle"
-        style={{ objectFit: "cover" }}
       />
-      <span className="fw-semibold fs-5 text-white">
+      <span className="fw-semibold fs-4 text-white">
         {props.owner}
       </span>
     </div>
     <span className="text-white">
       {props.content}
     </span>
-    <div className="d-flex align-items-center gap-1">
+    <div className="d-flex align-items-center gap-2">
       <img src="/like.svg" width={20}></img>
       <span style={{ color: "#23EAFA " }}>{props.like}</span>
     </div>

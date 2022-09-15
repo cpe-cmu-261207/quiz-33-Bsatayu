@@ -8,17 +8,17 @@ export default function Reply(props) {
       width="48"
       height="48"
       className="rounded-circle"
-      style={{ objectFit: "cover" }}
     />
     <div
       className="rounded rounded-3 p-2"
-      style={{ backgroundColor: "#3A3B3C" }}
+      style={{ backgroundColor: "Grey" }}
     >
-      <span className="fw-semibold" style={{ color: "#E4E6EB" }}>
+      <span className="fw-semibold" style={{ color: "White" }}>
         {props.owner}
       </span>
       <br />
-      <span style={{ color: "#E4E6EB" }}>{props.content}</span>
+      <span style={{ color: "White" }}>
+        {props.content}</span>
       <Count like={props.like} />
     </div>
   </div>);

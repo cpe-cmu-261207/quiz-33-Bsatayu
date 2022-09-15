@@ -5,23 +5,22 @@ import Reply from "./Reply";
 export default function Comment(props) {
   return (
     <div>
-      <div className="d-flex gap-2 my-2">
+      <div className="d-flex gap-2">
         <img
           src={props.profile_img}
           width="48"
           height="48"
           className="rounded-circle"
-          style={{ objectFit: "cover" }}
+          
         />
         <div
-          className="rounded rounded-3 p-2"
-          style={{ backgroundColor: "#3A3B3C" }}
+          className="rounded rounded-3 "
         >
-          <span className="fw-semibold" style={{color: "#E4E6EB" }}>
+          <span className="fw-semibold" style={{color: "White" }}>
             {props.owner}
           </span>
           <br />
-          <span style={{ color: "#E4E6EB" }}>{props.content}</span>
+          <span style={{ color: "#White" }}>{props.content}</span>
           <Count like ={props.like} />
         </div>
       </div>
